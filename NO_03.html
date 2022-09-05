@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var batas = prompt("Masukkan batas angka : ");
+        var bilangan;
+
+        for (let i = 1; i <= batas; i++) {
+            bilangan = 0;
+            for (let j = 0; j <= i; j++) {
+                if(i % j == 0){
+                    bilangan = bilangan + 1;
+                }
+            }
+            if (bilangan == 2){
+                document.write(i + "<p>");
+            }
+        }
+    </script>
+</body>
+</html>

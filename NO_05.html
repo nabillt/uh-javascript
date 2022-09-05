@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var menu = prompt("Pilihlah menu yang anda inginkan");
+         var harga = "";
+        
+         switch(menu){
+             case "Bakso":
+                 harga = "Harga Makanan 10000";
+                 break;
+             case "Mie Ayam":
+                 harga = "Harga Makanan 8000";
+                 break;
+             case "Rawon":
+                 harga = "Harga Makanan 12000";
+                 break;
+             case "Nasi pecel":
+                 harga = "Harga Makanan 7000";
+                 break;
+             case "Kupang":
+                 harga = "Harga Makanan 13000";
+                 break;
+             default:
+                 document.write("<p>Menu anda tidak tersedia</p>");
+         }
+         if(harga === ""){
+            document.write("<p>Menu tidak tersedia</p>");
+        } else {
+            document.write("<h2>" +harga + "</h2>");
+        }
+    </script>
+</body>
+</html>
